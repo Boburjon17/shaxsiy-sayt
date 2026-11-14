@@ -1,0 +1,16 @@
+# Maxfiy ma'lumotlar (parol, kalitlar)
+.env
+.env.*
+
+# Claude'ning shaxsiy sozlamalari (faqat shu kompyuter uchun)
+.claude/settings.local.json
+.claude/*.tmp.*
+
+# Tizim va muharrir chiqindilari
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log
+*.tmp
