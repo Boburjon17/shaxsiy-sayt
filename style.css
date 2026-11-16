@@ -260,13 +260,51 @@ footer .buttons { justify-content: center; }
     box-shadow: 0 16px 32px var(--shadow);
   }
   .nav.open .nav-links { display: flex; }
-  .nav-links a { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .nav-links a { padding: 14px 0; border-bottom: 1px solid var(--line); }
   .nav-links a:last-child { border-bottom: none; }
+  /* Barmoq bilan bosish qulay bo'lishi uchun 44px */
+  .theme-toggle, .menu-toggle { width: 44px; height: 44px; }
 }
 @media (max-width: 640px) {
-  .service { padding: 48px 0; }
+  /* Umumiy: sarlavhalar va bo'limlar orasidagi joy ixchamroq */
+  h2 { font-size: 26px; margin-bottom: 24px; }
+  .section-title { padding-top: 8px; }
+  .section-title h2 { margin-bottom: 16px; }
+  .projects, .reviews, .faq { padding: 56px 0; }
+  footer { padding: 48px 20px 32px; }
+  .copy { margin-top: 28px; }
+
+  /* Hero: rasm kichikroq, Telegram tugmasi birinchi ekranga yaqinroq */
+  .hero { padding: 24px 0 48px; }
+  .hero-inner { gap: 20px; }
+  .photo-frame { width: 160px; height: 190px; border-radius: 22px; }
+  .photo-fallback { font-size: 48px; }
+  .badge { margin-bottom: 12px; }
+  .role { font-size: 17px; }
+  .about { font-size: 16px; margin-top: 20px; }
+  /* Telefonda bog'lanish tugmalari tanishtiruv matnidan oldin turadi */
+  .hero-text { display: flex; flex-direction: column; align-items: center; }
+  .hero .buttons { order: 1; width: 100%; }
+  .hero .about { order: 2; }
+
+  /* Tugmalar ekran kengligi bo'ylab, ustma-ust */
+  .buttons { flex-direction: column; max-width: 360px; margin-left: auto; margin-right: auto; margin-top: 24px; }
+  .btn { justify-content: center; }
+
+  /* Xizmatlar: kichik ikonka va matn yonma-yon */
+  .service { padding: 28px 0; }
   .service-inner,
-  .service:nth-of-type(even) .service-inner { flex-direction: column; align-items: flex-start; gap: 20px; }
-  .service-icon { flex-basis: auto; width: 96px; height: 96px; border-radius: 20px; }
-  .service-icon svg { width: 48px; height: 48px; }
+  .service:nth-of-type(even) .service-inner { flex-direction: row; align-items: flex-start; gap: 16px; }
+  .service-icon { flex: 0 0 56px; height: 56px; border-radius: 14px; }
+  .service-icon svg { width: 28px; height: 28px; }
+  .num { margin-bottom: 2px; }
+  .service-text h3 { font-size: 20px; margin-bottom: 6px; }
+  .service-text p { font-size: 16px; }
+
+  /* Kartalar */
+  .project-cover { height: 120px; }
+  .project-body { padding: 18px 18px 22px; }
+  .review { padding: 20px; }
+  .faq summary { padding: 16px 18px; font-size: 16px; }
+  .faq details p { padding: 0 18px 18px; font-size: 15px; }
 }
